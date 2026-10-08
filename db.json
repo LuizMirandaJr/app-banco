@@ -1,0 +1,26 @@
+{
+    "investimentos": [
+        {
+            "id": 1,
+            "nome": "CDB do Banco Master",
+            "tipo": "CDB",
+            "valorMinimo": 10,
+            "rentabilidade12meses": 680,
+            "banco": {
+                "id": 0,
+                "nome": "Banco XYZ"
+            }
+        },
+        {
+            "id": 2,
+            "nome": "CDB do Banco Master",
+            "tipo": "CDB",
+            "valorMinimo": 30,
+            "rentabilidade12meses": 680,
+            "banco": {
+                "id": 2,
+                "nome": "Banco Master"
+            }
+        }
+    ]
+}

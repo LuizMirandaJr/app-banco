@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Financiamento from './pages/Financiamento'
+import Investimentos from './pages/Investimentos'
 
 import PixPage from './pages/PixPage'
 import PrivateRoute from './routes/PrivateRoute'
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         {/* Rotas Públicas: onde o usuario NÃO LOGADO pode acessar */}
         <Route path="/login" element={<Login />} />
+        <Route path="/investimentos" element={<Investimentos />} />
         {/* <Route path="/cadastro" element={<Cadastro />} /> */}
 
         {/* Rota privada */}

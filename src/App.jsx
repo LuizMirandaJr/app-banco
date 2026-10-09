@@ -3,7 +3,7 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Financiamento from './pages/Financiamento'
 import Investimentos from './pages/Investimentos'
-
+import Investimento from './pages/Investimento'
 import PixPage from './pages/PixPage'
 import PrivateRoute from './routes/PrivateRoute'
 import Jogo from './pages/Jogo'
@@ -32,6 +32,8 @@ function App() {
 
           <Route path="/" element={<Home />} />
           <Route path="/investimentos" element={<Investimentos />} />
+          <Route path="/investimento/:id" element={<Investimento />} />
+          {/* investimento/100 -> indica um dado especifico */}
           <Route path="/financiamento" element={<Financiamento />} />
           <Route path="/area-pix" element={<PixPage />} />
 

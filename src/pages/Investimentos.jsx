@@ -2,7 +2,7 @@ import CardInvestimento from '../components/CardInvestimento'
 import { useInvestimentos } from '../hooks/useInvestimentos'
 
 function Investimentos() {
-    const { investimentos } = useInvestimentos()
+    const { investimentos, loading, error } = useInvestimentos()
 
     return (
         <div className="p-6">
@@ -10,10 +10,13 @@ function Investimentos() {
 
             {/* maximo de colunas : 12 unidades */}
             <div className="grid gap-4 grid-cols-3">
-                {investimentos.map((investimento) => (                    
+                {investimentos.map((investimento) => (
                     <CardInvestimento key={investimento.id} investimento={investimento} />
                 ))}
             </div>
+
+            {loading && <span>Carregando investimentos</span>}
+            {error && <span className='text-red-500'>{error}</span>}
         </div>
     )
 }
